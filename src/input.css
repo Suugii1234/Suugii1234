@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 .header {
     height: 400px;
@@ -19,6 +17,7 @@
 }
 
 @screen md {
+
     .header {
         height: 650px;
     }
@@ -27,6 +26,8 @@
     }
 }
 
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
