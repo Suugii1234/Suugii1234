@@ -89,7 +89,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+    "bld": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build": "postcss ./src/input.css -o .dist/output.css",
+    "watch": "postcss ./src/input.css -o .dist/output.css --watch"
   },
   "repository": {
     "type": "git",

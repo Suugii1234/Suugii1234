@@ -2,17 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+.header {
+    height: 400px;
+}
+
+.trailer {
+    height: auto;
+}
+
 .hero {
     z-index: -10;
 }
 
-.header {
-    height: 650px;
+.btn-primary {
+    @apply bg-transparent uppercase border px-10 py-3 inline-block;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@screen md {
+    .header {
+        height: 650px;
+    }
+    .trailer {
+        height: 700px;
+    }
+}
 
 
 
